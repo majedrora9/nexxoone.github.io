@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>اختبار موقع محمد</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <h1>مرحباً بك في موقع محمد التجريبي</h1>
+  <button onclick="showMessage()">اضغطني</button>
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "تم الضغط! الموقع يعمل بنجاح 🎉";
+    }
+  </script>
+</body>
+</html>
